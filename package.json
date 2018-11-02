@@ -1,0 +1,21 @@
+{
+  "name": "tsougrana",
+  "version": "0.0.1",
+  "description": "A utility tool that assists in moving a js project or extracting dependency information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utility",
+    "move",
+    "migration",
+    "dependencies"
+  ],
+  "author": "John Apostolidis <john.apostolidi@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "glob": "^7.1.3"
+  }
+}

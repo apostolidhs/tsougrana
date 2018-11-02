@@ -1,0 +1,16 @@
+module.exports = {
+  fromBase: 'absolute/path',
+  toBase: 'absolute/path',
+  rules: [
+    {
+      from: 'relative/path',
+      to: 'relative/path'
+    },
+  ],
+  aliasFrom: {
+    'name': 'relative/path',
+  },
+  aliasTo: {
+    'name': 'relative/path'
+  }
+}
