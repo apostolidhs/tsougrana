@@ -1,6 +1,6 @@
 {
   "name": "tsougrana",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A utility tool that assists in moving a js project or extracting dependency information",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/apostolidhs/tsougrana.git"
-  }
+  },
+  "bin": "./index.js"
 }

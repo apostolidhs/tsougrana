@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const program = require('commander');
 const dependencies = require('./lib/dependencies');
 const move = require('./lib/move');
