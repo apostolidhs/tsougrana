@@ -21,6 +21,8 @@ A utility tool that assists in moving a js project or extracting dependency info
 
 `[configPath]`, the path for the configuration file
 
+`--verbose [verbose]`, The log detail level light|heavy (default: "light")
+
 **example**
 
 ```
