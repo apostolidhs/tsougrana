@@ -13,6 +13,7 @@ In order to proceed with the move of the files, we have to specify:
 * The absolute path to the source files
 * The absolute path to the destination files
 * A list of mapping rules between the source and the destination.
+* ignoreFiles is a regular expression with the source files that will not be move to the destination (optionally)
 * The source path alias (optionally)
 * The destination path alias (optionally)
 
@@ -20,6 +21,7 @@ In order to proceed with the move of the files, we have to specify:
 |---|---|
 |`[configPath]`|The path for the configuration file|
 |`--verbose [verbose]`|The log detail level light|heavy (default: "light")|
+|`--dryrun`|Logs the file moves and the missing dependencies without applying any action|
 
 **example**
 
@@ -45,6 +47,7 @@ module.exports = {
       to: 'foo/bar'
     },
   ],
+  ignoreFiles: /regex expression,
   aliasFrom: {
     'shared': 'src/shared'
   },

@@ -7,6 +7,7 @@ module.exports = {
       to: 'relative/path'
     },
   ],
+  ignoreFiles: /\.eslintrc\.js/,
   aliasFrom: {
     'name': 'relative/path',
   },

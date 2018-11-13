@@ -37,8 +37,16 @@ program
     /^(light|heavy)$/i,
     'light'
   )
+  .option(
+    '--dryrun',
+    'Logs the file moves and the missing dependencies without applying any action',
+    false
+  )
   .action((configPath, cmd) => {
-    move(configPath || defaultConfigPath, {verbose: cmd.verbose});
+    move(configPath || defaultConfigPath, {
+      verbose: cmd.verbose,
+      dryrun: cmd.dryrun
+    });
   });
 
 program.parse(process.argv);
@@ -46,3 +54,12 @@ program.parse(process.argv);
 if (!program.args.length) {
   program.help();
 }
+
+// tsougrana resolver.config.js --dry-run
+
+// moving
+// from -> to
+// from -> to
+
+// missing
+// 'path' -> file
