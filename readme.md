@@ -20,6 +20,8 @@ In order to proceed with the move of the files, we have to specify:
 |Option|Description|
 |---|---|
 |`[configPath]`|The path for the configuration file|
+|`--fromBase`|Set your local base project path (old|from)|
+|`--toBase`|Set your local base project path (new|to)|
 |`--verbose [verbose]`|The log detail level light|heavy (default: "light")|
 |`--dryrun`|Logs the file moves and the missing dependencies without applying any action|
 
@@ -35,8 +37,6 @@ In order to proceed with the move of the files, we have to specify:
 
 ```
 module.exports = {
-  fromBase: '/Users/user/Documents/fromProject/',
-  toBase: '/Users/user/Documents/toProject',
   rules: [
     {
       from: 'src/**',

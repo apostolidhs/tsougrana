@@ -1,6 +1,4 @@
 module.exports = {
-  fromBase: 'absolute/path',
-  toBase: 'absolute/path',
   rules: [
     {
       from: 'relative/path',
@@ -8,6 +6,7 @@ module.exports = {
     },
   ],
   ignoreFiles: /\.eslintrc\.js/,
+  relativeResolutionDepth: 3,
   aliasFrom: {
     'name': 'relative/path',
   },

@@ -31,6 +31,8 @@ program
 program
   .command('move <configPath>')
   .description('Moves files according to <configPath> file')
+  .option('--fromBase', 'Set your local base project path (old|from)'),
+  .option('--toBase', 'Set your local base project path (new|to)'),
   .option(
     '--verbose [verbose]',
     'The log detail level light|heavy',
@@ -45,7 +47,9 @@ program
   .action((configPath, cmd) => {
     move(configPath || defaultConfigPath, {
       verbose: cmd.verbose,
-      dryrun: cmd.dryrun
+      dryrun: cmd.dryrun,
+      fromBase: cmd.fromBase,
+      toBase: cmd.toBase
     });
   });
 
