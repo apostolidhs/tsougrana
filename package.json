@@ -1,6 +1,6 @@
 {
   "name": "tsougrana",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A utility tool that assists in moving a js project or extract dependency information",
   "main": "index.js",
   "scripts": {
