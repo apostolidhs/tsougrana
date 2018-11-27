@@ -58,12 +58,3 @@ program.parse(process.argv);
 if (!program.args.length) {
   program.help();
 }
-
-// tsougrana resolver.config.js --dry-run
-
-// moving
-// from -> to
-// from -> to
-
-// missing
-// 'path' -> file
